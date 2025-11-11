@@ -9,8 +9,11 @@ module.exports = {
       directory: './'
     }
   },
-  output: {
-    clean: true
+output: {
+  clean: true,
+  path: path.resolve(__dirname, 'dist'),
+},
+
   },
   builtins: {
     html: [{
@@ -19,3 +22,4 @@ module.exports = {
     }]
   }
 }
+
