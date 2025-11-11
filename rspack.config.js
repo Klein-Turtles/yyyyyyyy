@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   context: __dirname,
   entry: './script/main.js',
@@ -9,17 +11,16 @@ module.exports = {
       directory: './'
     }
   },
-output: {
-  clean: true,
-  path: path.resolve(__dirname, 'dist'),
-},
-
+  output: {
+    clean: true,
+    path: path.resolve(__dirname, 'dist')
   },
   builtins: {
-    html: [{
-      template: './index.html',
-      inject: true
-    }]
+    html: [
+      {
+        template: './index.html',
+        inject: true
+      }
+    ]
   }
-}
-
+};
